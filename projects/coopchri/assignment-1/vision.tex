@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+%\usepackage{times}
+\usepackage{cite}
+%\usepackage{biblatex}
+%\addbibresource{myref.bib}
+%this is a comment
+\title{Driver Lockout}
+\author{Christopher Cooper ONID: coopchri}
+
+
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+
+
+\section{Distracted Driving and Texting}
+Though most people rarely associate the crashes seen to a driver being distracted by texting at the wheel, it is something that happens more often than it should. According to the article, "The Dangers of Distracted Driving," appearing on the Federal Communications Commission website, there were 3,477 people killed in vehicle crashes where one driver was distracted in the year 2015 as reported by the National Highway Traffic Safety Administration. The report also estimates and additional 391,000 people to be injured in these types of crashes. While there are many possible ways a driver can be distracted, the article estimates that at any moment during the day, approximately 660,000 driver in the US are using cell phones or another electronic device while behind the wheel~\cite{fcc}.
+The article for the FCC continued to say that cell phone use was highest among 16-24 year old drivers~\cite{fcc}. There were no concrete reasons as to why this age group so no specculation will be made here.
+Ideally people would simply not use their phone while driving, but it is typical for people to act against better judgement. This is further complicated by the laws surrounding use of phones while driving. While there are many state laws prohibiting the use of cell phones while driving, there is not a national law~\cite{fcc}. This leads the act not being illegal or even formally discouraged in some states. The Governors Highway Safety Association has a list in their article "Distracted Driving," showing the laws in each state~\cite{statelaws}.
+Take an example situation. Someone may be having a busy day and driving through town. They arrive at an intersection where another driver has been trying to reply to a text from their spouse, not noticing that the light at the intersection is red. This leads to the distracted driver colliding into the first driving in the middle of the intersection and both drivers being injured.
+This story ends with the drivers only being hurt, but it can often end much worse. This could easily be prevented by the driver refraining from texting their spouse while on the road.
+\section{Software Intervention}
+How might this situation be improved by a software system? It would start from the very beginning when the drivers enter their cars. The system would be activated, and in effect, lock the phone from use while the car is in motion. The speed of this motion would be irrelevant. The car only needs to be moving.
+There are many phone apps out there that can automatically decline calls and respond to emails with a premade message, but with these apps the urge to open the phone and look at that text could still take over, and distract the driver. A solution to this is simple, prevent the driver from using the phone at all while the car is in motion. This would be handled by accessing tasks in the same manner as a task mangement app and closing them all on a preset cycle. The app would detect motion by using the GPS system, as the accelerometer will not detect the motion of the car, and then start a cycle to close all applications every second when motion is detected.
+\subsection{Features}
+The features for the application would be the detection of motion through GPS usage, closing all open tasks on the phone besides the app itself, automatic reply to texts and calls with a user defined message, and automatic silencing of the phone while the app is open.
+The idea of this app is really not to make any task easier, but to make a task that is dangerous while driving to be impossible.
+The three most important features of the system would be the motion detection with GPS, closing all open tasks on the phone, and automatically replying to texts and calls. Of these three features, the closing of open tasks on the phone would be the most important. This is because without the ability to close tasks on the phone, the app cannot lock the phone to the user. The least important is the automatic reply to texts and calls as the user can reply themselves after they are done driving.
+How someone might use the system is to turn it on when they enter their car, leave it running for the entire drive, then turn the app off. If they try to open an application while driving, the app will forcefully close that application.
+The system has a major issue with being harsh on the phone battery and if nothing else, the user could charge the phone in the car. Ideally however, the checks to the GPS system would be as infrequent as possible while still detecting when the car is moving and when it stops.
+With this application, if actually used, would help reduce the number of crashes that occur because someone was using their phone behind the wheel.
+\subsection{Challenges}
+The most serious challenge seen in developing this product is in testing of the software. Because this is a software that has primary features related to driving, a safe place is needed to drive in order to test the software. In order to alleviate this, I would speak to the DMV, police, and OSU administration in order to find an isolated and safe environment to drive and test the software. Of course, the driver of the car would not be the individual running tests and checking the performance of the software.
+
+
+\bibliography{myref}
+\bibliographystyle{ieeetr}
+
+\end{document}
