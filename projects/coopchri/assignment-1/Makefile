@@ -18,7 +18,7 @@ dvi: ${TARGET}.tex
 ps: dvi
 	dvips -R -Poutline -t letter ${TARGET}.dvi -o ${TARGET}.ps
 
-pdf: ps
+all: ps
 	ps2pdf ${TARGET}.ps
 
 clean-dvi:
